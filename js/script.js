@@ -14,7 +14,8 @@ function navIds() {
         const botoes = document.querySelectorAll('.nav-botoes .botao');
         botoes.forEach(botao => {
             const idBase = botao.id;
-            botao.id = `${idBase}-${tipoUsuario}`
+            botao.id = `${idBase}-${tipoUsuario}`;
+            botao.setAttribute("href", `${botao.id}.html`);
         })
 
     } else if (tipoUsuario === 'coletor') {
@@ -24,7 +25,8 @@ function navIds() {
         const botoes = document.querySelectorAll('.nav-botoes .botao');
         botoes.forEach(botao => {
             const idBase = botao.id;
-            botao.id = `${idBase}-${tipoUsuario}`
+            botao.id = `${idBase}-${tipoUsuario}`;
+            botao.setAttribute("href", `./${botao.id}.html`);
         })
     }
 }
