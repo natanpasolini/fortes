@@ -1,4 +1,34 @@
 
+function logout() {
+    localStorage.setItem('tipoUsuarioLogado', 'none')
+    console.log('Deslogado')
+    window.location.href = "../index.html"
+}
+
+function navIds() {
+    let tipoUsuario = localStorage.getItem('tipoUsuarioLogado')
+    if (tipoUsuario === 'ong') {
+        console.log('Logou como ong')
+        const userName = document.getElementById('nav-user-name')
+        userName.innerHTML = 'Usuário (ONG)'
+        const botoes = document.querySelectorAll('.nav-botoes .botao');
+        botoes.forEach(botao => {
+            const idBase = botao.id;
+            botao.id = `${idBase}-${tipoUsuario}`
+        })
+
+    } else if (tipoUsuario === 'coletor') {
+        console.log('Logou como coletor')
+        const userName = document.getElementById('nav-user-name')
+        userName.innerHTML = 'Usuário (Coletor)'
+        const botoes = document.querySelectorAll('.nav-botoes .botao');
+        botoes.forEach(botao => {
+            const idBase = botao.id;
+            botao.id = `${idBase}-${tipoUsuario}`
+        })
+    }
+}
+
 function navbarHam() {
     let x = document.getElementById('navbar');
     x.classList.toggle('active')

@@ -3,7 +3,7 @@
             <h1>FORTES ENGENHARIA</h1>
             <div>
                 <a id="nav-mobile-ham" onclick="navbarHam()"></a>
-                <a id="nav-mobile-logout"></a>
+                <a id="nav-mobile-logout" onclick="logout()"></a>
             </div>
         </div>
         <div id="navbar" class="container-nav">
@@ -11,13 +11,13 @@
                 <div class="nav-profile w-100">
                     <div class="nav-user w-100">
                         <div class="nav-user-pic"></div>
-                        <p>Usuário</p>
+                        <p id="nav-user-name">Usuário</p>
                     </div>
                     <input type="text" id="p-pesquisa" name="p-pesquisa" placeholder="Pesquisa">
                 </div>
                 <div class="nav-botoes w-100">
                     <a class="botao w-100" id="dashboard">Dashboard</a>
-                    <a class="botao w-100" id="pontos">Pontos</a>
+                    <a class="botao w-100" id="pontos" href="./index.html">Pontos</a>
                     <a class="botao w-100" id="mensagens">Mensagens</a>
                     <a class="botao w-100" id="conta">Conta</a>
                 </div>
@@ -30,7 +30,7 @@
                     <img id="btn-site-mode-circle-light" src="../imgs/light_mode_icon.png" style="display: flex; position: absolute; top: 0; right: -5px;">
                     <img id="btn-site-mode-circle-dark" src="../imgs/dark_mode_icon.png" style="display: none; position: absolute; top: 0; right: 75px;">
                 </button>
-                <button id="br-exit" class="botao b-round w-80">Sair</button>
+                <button id="br-exit" class="botao b-round w-80" onclick="logout()">Sair</button>
             </div>
         </div>
     </nav>
