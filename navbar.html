@@ -1,36 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortes Engenharia</title>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
     <nav>
-        <div class="container-nav">
+        <div class="container-nav-mobile">
+            <h1>FORTES ENGENHARIA</h1>
+            <div>
+                <a id="nav-mobile-ham" onclick="navbarHam()"></a>
+                <a id="nav-mobile-logout"></a>
+            </div>
+        </div>
+        <div id="navbar" class="container-nav">
             <div class="nav-start">
                 <div class="nav-profile w-100">
                     <div class="nav-user w-100">
-                        <img src="./imgs/placeholder.png" height="120px" width="auto" style="border-radius: 60px;">
+                        <div class="nav-user-pic"></div>
                         <p>Usuário</p>
                     </div>
                     <input type="text" id="p-pesquisa" name="p-pesquisa" placeholder="Pesquisa">
                 </div>
                 <div class="nav-botoes w-100">
-                    <button class="botao w-100">Dashboard</button>
-                    <button class="botao w-100">Pontos</button>
-                    <button class="botao w-100">Mensagens</button>
-                    <button class="botao w-100">Conta</button>
+                    <a class="botao w-100" id="dashboard">Dashboard</a>
+                    <a class="botao w-100" id="pontos">Pontos</a>
+                    <a class="botao w-100" id="mensagens">Mensagens</a>
+                    <a class="botao w-100" id="conta">Conta</a>
                 </div>
             </div>
             <div class="nav-end w-100">
-                <button class="botao b-round w-80">Sair</button>
+                <button id="btn-site-mode" onclick="siteMode()">
+                     <svg id="btn-site-mode-circle" height="42" width="42" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse rx="20" ry="20" cx="20" cy="20" />
+                    </svg>
+                    <img id="btn-site-mode-circle-light" src="../imgs/light_mode_icon.png" style="display: flex; position: absolute; top: 0; right: -5px;">
+                    <img id="btn-site-mode-circle-dark" src="../imgs/dark_mode_icon.png" style="display: none; position: absolute; top: 0; right: 75px;">
+                </button>
+                <button id="br-exit" class="botao b-round w-80">Sair</button>
             </div>
         </div>
     </nav>
-</body>
-</html>
