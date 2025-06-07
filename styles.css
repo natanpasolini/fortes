@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #2E7D32;
+    --secondary-color: #66BB6A;
+    --dark-primary-color: #255D2A;
+    --dark-secondary-color: #3E6B3F;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    width: 20%;
+    min-height: 100vh;
+    background-color: var(--dark-secondary-color);
+    box-shadow: 0.5px 0px 5px black;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-start {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+    background-color: var(--dark-primary-color);
+}
+
+.nav-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#p-pesquisa {
+    width: 80%;
+    border: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-image: url(./imgs/search_icon.png);
+    background-position: 10px center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.nav-botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    border: 0;
+    text-shadow: 0.2px 1.2px 2px black;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--primary-color);
+}
+
+.b-round {
+    border-radius: 12px;
+    padding: 7px;
+    box-shadow: 0.1px 1.2px 3px black
+}
+
+.botao-clicked {
+    background-color: var(--primary-color);
+}
+
+.nav-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    
+}
