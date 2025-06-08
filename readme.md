@@ -1,5 +1,7 @@
 # Projeto interdisciplinar - FORTES ENGENHARIA
 
+> Aviso: por conta dos arquivos estarem em pastas, é necessário rodar em um server local (ex: extensão Live Server/Live Preview do VSCode) para que os scripts funcionem.
+
 Foi proposto pelos professores de *Experiencia e Interface com o Usuário*, *Construção de Software para Web* e *Design e Desenvolvimento de Banco de Dados I* a construção de uma plataforma web para a solução de um desafio real da empresa Fortes engenharia:
 
 ## Desafio
