@@ -2,7 +2,7 @@
 function logout() {
     localStorage.setItem('tipoUsuarioLogado', 'none')
     console.log('Deslogado')
-    window.location.href = "../index.html"
+    window.location.href = "../pags/login.html"
 }
 
 function navIds() {
@@ -89,4 +89,9 @@ function localSeleto() {
     }
 }
 
-document.addEventListener('navbarLoaded', localSeleto);
+function navbarCarregada() {
+    localSeleto();
+    navIds();
+}
+
+document.addEventListener('navbarLoaded', navbarCarregada);

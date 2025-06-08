@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
+    <link href="../css/inicio.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-principal flex-center">
+        <div class="container-opcoes flex-direction-column">
+            <h1 style="font-size: 72px">Fortes</h1>
+            <div class="container-login flex-center flex-direction-column">
+                <form class="flex-center flex-direction-column" name="formLogin" onsubmit="login()" method="post">
+                    <h1>Login</h1>
+                    <input id="login-user" type="text" name="nomeUsuario" placeholder="Email">
+                    <input id="login-password" type="password" name="senhaUsuario" placeholder="Senha">
+                    <button type="submit" class="botao b-round w-80">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/user.js"></script> <!-- Scripts relacionado ao usuário -->
+</body>
+</html>
