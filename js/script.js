@@ -2,7 +2,7 @@
 function logout() {
     localStorage.setItem('tipoUsuarioLogado', 'none')
     console.log('Deslogado')
-    window.location.href = "../pags/login.html"
+    window.location.href = "../html/login.html"
 }
 
 function navIds() {
@@ -15,7 +15,7 @@ function navIds() {
         botoes.forEach(botao => {
             const idBase = botao.id;
             botao.id = `${idBase}-${tipoUsuario}`;
-            botao.setAttribute("href", `${botao.id}.html`);
+            botao.setAttribute("href", `./${botao.id}.html`);
         })
 
     } else if (tipoUsuario === 'coletor') {

@@ -10,10 +10,10 @@ function login() {
     let userPass = document.forms["formLogin"]["senhaUsuario"].value;
     if (userName === 'admin@fortes.com.br' && userPass === '123456') {
         localStorage.setItem('tipoUsuarioLogado', 'coletor')
-        window.location.href = '../pags/teste.html'
+        window.location.href = '../html/teste.html'
     } else if (userName === 'cooperativas@fortes.com.br' && userPass === '123456') {
         localStorage.setItem('tipoUsuarioLogado', 'ong')
-        window.location.href = '../pags/teste.html'
+        window.location.href = '../html/teste.html'
     }
 }
 
