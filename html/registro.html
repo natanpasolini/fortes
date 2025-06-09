@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro Fortes</title>
     <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
     <link href="../css/inicio.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +22,8 @@
                 </p>
             </div>
             <div class="container-registro flex-center flex-direction-column">
-                <form class="flex-center flex-direction-column" name="formLogin" onsubmit="login()" method="post">
-                    <h2>Cadastro de ONG</h2>
+                <form class="flex-center flex-direction-column" name="formRegistro" onsubmit="Registro()" method="post">
+                    <h2 id="titulo-cadastro">Cadastro de ONG</h2>
                     <p>Está no lugar errado? <a href="../index.html" style="color:black;">voltar</a></p>
                     <div class="input-box">
                         <span class="icon">
@@ -57,7 +57,7 @@
                     </div>
                     <p id="login-error" style="display: none; color: red; font-size: 10px">Usuário ou senha inválido</p>
                     <span class="h-separator"></span>
-                    <button type="submit" class="botao b-round w-60">Finalizar</button>
+                    <button type="submit" class="botao b-round w-60" onclick="alert('O registro não é funcional, porfavor volte e faça login.')">Finalizar</button>
                     <div style="display: flex;width: 100%;justify-content: end;align-items: center;"><p>precisa de ajuda? <a style="color:black;">faq</a></p></div>
                 </form>
             </div>
@@ -78,5 +78,6 @@
         </div>
     </div>
     <script src="../js/user.js"></script> <!-- Scripts relacionado ao usuário -->
+    <script src="../js/register.js"></script>
 </body>
 </html>

@@ -179,6 +179,18 @@
     font-size: 20px;
 }
 
+#register-text {
+    text-align: center;
+}
+
+#register-text p {
+    font-size: 20px;
+}
+
+#register-text h3 {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 768px) {
     .container-opcao {
         width: 50%;
