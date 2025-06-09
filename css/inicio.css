@@ -179,6 +179,26 @@
     font-size: 20px;
 }
 
+#container-register-text {
+    height: 450px;
+    width: 20%;
+    text-align: center;
+}
+
+#container-register-text h1 {
+    font-size: 48px;
+}
+
+#container-register-text span {
+    font-size: 64px;
+}
+
+#container-register-text-stats {
+    height: 450px;
+    width: 20%;
+    flex-direction: column;
+}
+
 #register-text {
     text-align: center;
 }
@@ -213,5 +233,32 @@
 
     .bar-separator {
         height: 106px;
+    }
+
+    #container-registro {
+        flex-direction: column;
+    }
+
+    .container-registro {
+        width: 100%;
+    }
+
+    #container-register-text {
+        height: 20%;
+        width: 100%;
+    }
+
+    #container-register-text h1 {
+        font-size: 32px;
+    }
+
+    #container-register-text span {
+        font-size: 48px;
+    }
+
+    #container-register-text-stats {
+        height: 20%;
+        width: 100%;
+        flex-direction: row;
     }
 }
