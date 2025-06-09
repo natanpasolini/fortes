@@ -45,6 +45,10 @@
     width: 80%;
 }
 
+.w-60 {
+    width: 60%;
+}
+
 .nav-start {
     display: flex;
     flex-direction: column;
