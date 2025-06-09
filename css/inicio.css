@@ -212,10 +212,30 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container-principal {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .container-opcoes {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .separator {
+        flex-direction: row;
+    }
+
+    .bar-separator {
+        display: none;
+    }
+    
     .container-opcao {
-        width: 50%;
+        width: 80%;
         padding: 10px;
-        height: 240px;
+        height: 200px;
     }
 
     .opcao-text h1 {
@@ -226,13 +246,8 @@
         font-size: 14px;
     }
 
-    .separator {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .bar-separator {
-        height: 106px;
+    .container-login {
+        width: 100%;
     }
 
     #container-registro {
@@ -241,6 +256,8 @@
 
     .container-registro {
         width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     #container-register-text {

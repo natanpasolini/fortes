@@ -90,8 +90,8 @@ function localSeleto() {
 }
 
 function navbarCarregada() {
-    localSeleto();
     navIds();
+    localSeleto();
 }
 
 document.addEventListener('navbarLoaded', navbarCarregada);
