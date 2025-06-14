@@ -1,6 +1,6 @@
 function paraCadastro(tipo) {
     localStorage.setItem('tipoRegistro', tipo)
-    window.location.href = '../html/registro.html'
+    window.location.href = './html/registro.html'
 }
 
 function definirCadastro() {
