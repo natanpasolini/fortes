@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/coletordashboard.css"> <!-- CSS específico para a página de dashboard do coletor -->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css"> <!-- CSS específico para a página de dashboard do coletor -->
     <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,32 +14,36 @@
     <div class="container-principal">
         <div id="navbar-placeholder"></div> <!-- Não mexe aqui, é para carregar a navbar -->
         <div class="dashboard">
-    <div class="row">
+    <div class="row" style="height: 20%;">
       <div class="card">Quadro de avisos</div>
       <div class="card">Quadro livre ou anúncios</div>
     </div>
-    <div class="row">
+    <div class="row" style="height: 80%;">
       <div class="left-column">
-        <div class="card large">
+        <button class="card large dash-btn">
           <div class="recycle-icon">♻</div>
           <p>Gerenciar pontos de coleta</p>
-        </div>
-        <div class="row">
-          <div class="card">🗨<br>Mensagens</div>
-          <div class="card">?<br>Ajuda</div>
+        </button>
+        <div class="row" style="height: 40%;">
+          <button class="card dash-btn">🗨<br>Mensagens</button>
+          <button class="card dash-btn">?<br>Ajuda</button>
         </div>
         </div>
       <div class="right-column">
-        <div class="card small">Gráfico</div>
         <div class="info">
-          <p>Você coletou resíduos<strong> 20 vezes</strong></p>
-          <p>Nos últimos meses<br>através da<br>plataforma!</p>
-          <p>Esperamos ver<br>cada vez mais<br>você por aqui!</p>
+          <div class="card small">Gráfico</div>
+          <div class="text">
+            <p>Você coletou resíduos</p>
+            <h3 style="font-weight: bold">20 Vezes</h3>
+            <p>Nos últimos meses<br>através da<br>plataforma!</p>
+            <p>Esperamos ver<br>cada vez mais<br>você por aqui!</p>
+          </div>
         </div>
       </div>
       </div>
       </div>
       </div>
+    <script src="../js/verify-user.js"></script>
     <script src="../js/load-nav.js"></script> <!-- Carregar a navbar -->
     <script src="../js/script.js"></script> <!-- Outros scripts -->
 </body>
