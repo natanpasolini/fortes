@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #F1F8F4;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: auto;
+  background: #F1F8F4;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-box {
+  width: 260px;
+  height: 260px;
+  flex: 1;
+  border: 1px solid #b1b0b0fa;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: #14141496;
+}
+
+.upload-button {
+  margin-top: 10px;
+  background-color: #66BB6A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+.input-section {
+  width: 50%;
+}
+
+.input-section label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 2px rgb(17, 17, 17);
+}
+
+.inline-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.inline-inputs div {
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.save-button {
+  background-color: #66BB6A;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .upload-section {
+    height: 200px
+  }
+
+  .input-section {
+    width: 100%;
+  }
+}
