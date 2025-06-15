@@ -1,0 +1,245 @@
+body {
+    background-color: var(--background-color);
+}
+
+.container-itens {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-titulo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtro-select {
+    display: flex;
+    align-items: center;
+    border: 1px solid #646363;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
+    gap: 5px;
+}
+
+#filtro {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.container-meio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-itens-proximo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.container-proximo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    gap: 5px;
+    box-shadow: 0.1px 1.2px 3px black
+}
+
+.container-proximo p {
+    font-weight: 200;
+}
+
+.container-proximo h3 {
+    font-weight: 400;
+}
+
+.container-proximo.imagem {
+    height: 100px;
+    width: 100px;
+    background: url('../imgs/placeholder.png') center/cover;
+}
+
+.filtros-outros {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-outros-pontos {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-outro-ponto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 6px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.outro-ponto-imagem {
+    height: 160px;
+    width: 160px;
+    display: flex;
+    background: url('../imgs/placeholder.png') center/cover;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.outro-ponto-info {
+    display: flex;
+    flex: 1;
+    max-width: 30%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.outro-ponto-tipos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+    max-width: 13%;
+}
+
+.outro-ponto-tipos-coletados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.outro-ponto-tipos-coletados .row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.outro-ponto-tipos-coletados .column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.outro-ponto-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    flex: 1;
+    max-width: 20%;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .container-outro-ponto {
+        max-height: 120px;
+        align-items: center;
+    }
+    
+    .outro-ponto-imagem {
+        height: 100px;
+        width: 100px;
+    }
+
+    .filtro-select span {
+        font-size: 12px;
+    }
+
+    #filtro {
+        font-size: 9px;
+    }
+
+    p, a {
+        font-size: 9px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 10px
+    }
+
+    .outro-ponto-tipos {
+        max-width: 20%;
+    }
+
+    .outro-ponto-tipos h1 {
+        font-size: 9px;
+    }
+
+    .outro-ponto-tipos-coletados {
+        padding: 0px;
+    }
+
+    .botao {
+        width: 100%;
+        height: 20px;
+        font-size: 7px;
+    }
+
+    .outro-ponto-tipos-coletados span, .outro-ponto-tipos-coletados p {
+        font-size: 10px;
+    }
+
+    .container-proximo.imagem {
+        height: 64px;
+        width: 64px;
+    }
+}
