@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <div class="container-principal">
+        <div id="navbar-placeholder"></div> <!-- Não mexe aqui, é para carregar a navbar -->
+        <div class="container">
+          <div><h1>Editor de Ponto de Coleta</h1></div>
+          <div class="container-infos">
+            <div class="imagem-upload">
+            <div class="imagem-preview">⬆</div>
+            <button class="botao b-round">Enviar imagem</button>
+          </div>
+          <div class="container-infos flex-1 h-100">
+            <div class="form-coluna">
+            <label class="flex-0">Nome<br><input type="text"></label>
+            <label id="desc">Descrição<br><textarea></textarea></label>
+          </div>
+
+          <div class="form-coluna">
+            <label>Localização<br><input type="text"></label>
+            <label>Telefone<br><input type="text"></label>
+            <label>Site<br><input type="text"></label>
+          </div>
+          </div>
+          
+          </div>
+          <div class="container-infos">
+            <div class="residuos">
+      <p>Tipos de resíduos</p>
+      <div class="tr-row">
+        <div class="tr-column">
+          <label><input type="checkbox"> Vidro</label>
+          <label><input type="checkbox"> Plástico</label>
+          <label><input type="checkbox"> Madeira</label>
+        </div>
+        <div class="tr-column">
+          <label><input type="checkbox"> Metal</label>
+          <label><input type="checkbox"> Eletrônicos</label>
+          <label><input type="checkbox"> Orgânico</label>
+        </div>
+      </div>
+      <div class="botoes">
+        <button class="botao b-round">Desmarcar Todos</button>
+        <button class="botao b-round">Marcar Todos</button>
+      </div>
+    </div>
+
+    <div class="disponibilidade">
+      <p>Disponibilidade</p>
+      <div class="linha"><label><input type="checkbox"> Domingo</label><span>11-17</span></div>
+      <div class="linha"><label><input type="checkbox"> Segunda-feira</label><span>09-22</span></div>
+      <div class="linha"><label><input type="checkbox"> Terça-feira</label><span>00-00</span></div>
+    </div>
+          </div>
+    
+
+    <div class="quadro">
+      Quadro vazio, pode se utilizar para anúncios
+    </div>
+
+    <div class="botoes-acao">
+      <button>⬅ Voltar</button>
+      <button>Salvar</button>
+    </div>
+  </div>
+    </div>
+    <script src="../js/load-nav.js"></script> <!-- Carregar a navbar -->
+    <script src="../js/script.js"></script> <!-- Outros scripts -->
+
+</body>
+</html>
