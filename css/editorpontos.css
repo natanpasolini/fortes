@@ -5,24 +5,27 @@ body {
 
 .container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 220px 1fr 1fr;
-  grid-template-areas: 
-    "upload nome localização"
-    "upload descricao telefone"
-    "residuos disponibilidade disponibilidade"
-    "quadro quadro quadro"
-    "botoes botoes botoes";
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container-infos {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .imagem-upload {
-  grid-area: upload;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .imagem-preview {
@@ -34,7 +37,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  margin-bottom: 8px;
 }
 
 .imagem-upload button {
@@ -48,7 +50,28 @@ body {
 .form-coluna {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  height: 100%;
   gap: 10px;
+}
+
+.form-coluna label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#desc {
+  height: 60%;
+}
+
+.form-coluna label input {
+  flex: 1;
+}
+
+.form-coluna label textarea {
+  resize: none;
+  flex: 1;
 }
 
 .form-coluna input, .form-coluna textarea {
@@ -58,32 +81,37 @@ body {
   border: 1px solid #ccc;
 }
 
+.form-coluna #desc {
+  height: 100%;
+}
+
 .residuos {
-  grid-area: residuos;
+  height: 100%;
+  flex: 1;
+  display: flex;
   background-color: white;
   padding: 10px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  justify-content: space-between;
+  gap: 20px;
   border: 1px solid #ccc;
 }
 
-.residuos .botoes {
+.botoes {
   display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-}
-
-.residuos button {
-  padding: 4px 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: #a0d0b0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
 }
 
 .disponibilidade {
-  grid-area: disponibilidade;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
   background-color: white;
   padding: 10px;
   border-radius: 6px;
@@ -93,26 +121,21 @@ body {
 .disponibilidade .linha {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6px;
 }
 
 .quadro {
-  grid-area: quadro;
-  height: 100px;
+  flex: 1;
   background-color: #dcdcdc;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  margin-top: 5%;
 }
 
 .botoes-acao {
-  grid-area: botoes;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .botoes-acao button {
@@ -121,4 +144,48 @@ body {
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.flex-0 {
+  flex: 0 !important;
+}
+
+.tr-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.tr-column {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .imagem-preview {
+    width: 120px;
+    height: 120px;
+  }
+  .container-infos {
+    height: 200px;
+  }
+
+  .linha label, .linha span  {
+    font-size: 10px;
+  }
+
+  .tr-column label {
+    font-size: 10px;
+  }
 }
