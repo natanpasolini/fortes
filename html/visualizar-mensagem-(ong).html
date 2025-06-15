@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
+     <link href="../css/visualizar-mensagem-(ong)CSS.css" rel="stylesheet">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container-principal">
+        <div id="navbar-placeholder"></div> <!-- Não mexe aqui, é para carregar a navbar -->
+
+        <div class="container-itens">
+            
+            <div class="container-topo">
+                <h1>Enviar mensagen</h1>
+            </div>
+            
+            <div class="container-meio">
+                <div class="input-esquerda">
+                        <h1>Recebido de:</h1>
+                    <input class="input" type="text" placeholder="Nome da Empresa">
+                </div>
+                <div class="input-esquerda">
+                    <h1>Em:</h1>
+                        <input class="input" type="text" placeholder="Data e hora"></div>
+                <div class="input-esquerda">
+                    <h1>Referente ao ponto</h1>
+                        <input class="input" type="text" placeholder="Nome do ponto de coleta">
+                    </div>
+            </div>
+
+            <div class="container-meio-baixo">
+                <h1>Mensagem</h1>
+                <input class="input" type="text" placeholder="Assunto da Mensagem">
+                <textarea class="input" id="grande" placeholder="Escreva sua mensagem aqui">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc  ante, facilisis sed dui eu, vulputate scelerisque massa. Nulla id tempor ligula. Donec vitae vestibulum nibh. Maecenas scelerisque lacinia  ipsum, sit amet facilisis nibh pulvinar ac. Etiam suscipit vel felis ut  auctor. Duis id sapien vel enim dignissim tristique. Nullam elementum  eros vel lectus suscipit blandit. Donec a lectus ultricies, suscipit  tortor eget, posuere lectus. Praesent eu mauris vitae magna auctor  tempus vitae sit amet enim. Donec non dolor malesuada, euismod sapien a, viverra felis. Nam aliquet mauris turpis, eget aliquet dui tristique  sit amet. Phasellus tincidunt, est at aliquam aliquet, leo nulla  faucibus libero, eu vestibulum est mi id risus. Maecenas non massa quis  sem aliquet imperdiet. Nulla aliquet dolor urna, et luctus sem  pellentesque quis. Mauris scelerisque purus nec rhoncus pulvinar.
+ Sed ligula leo, pulvinar sit amet malesuada nec, imperdiet eu nibh. In  quis molestie nibh. Etiam eleifend purus in nisi tempus, a imperdiet  nulla finibus. Donec sagittis pulvinar orci, a dictum tortor egestas  vitae. Ut bibendum ante quam, quis imperdiet arcu semper non. Mauris  elementum malesuada pretium. Maecenas molestie dapibus lorem ut  pulvinar. Aenean ac molestie sapien, venenatis efficitur nibh. Duis  porta ligula tellus, non fringilla dolor dapibus a. Quisque malesuada  purus iaculis arcu dictum luctus. Vivamus nec tempor eros, quis feugiat  libero. Vestibulum hendrerit purus ut elit ullamcorper egestas. Nullam  in erat vitae eros porttitor ullamcorper vestibulum sed tortor.
+ Curabitur at elit sit amet mi pharetra feugiat. Aliquam fringilla  accumsan orci fringilla dictum. Aliquam nibh libero, sodales nec  efficitur non, ullamcorper quis ipsum. Proin hendrerit augue at massa  egestas dictum. Suspendisse elementum bibendum urna, in pharetra libero. Nunc pulvinar congue eros id sagittis. Aliquam ullamcorper ligula  massa, quis gravida massa rutrum sit amet. Nam imperdiet fringilla  lacinia. In a risus quis arcu blandit pellentesque. Integer at dolor  augue. Nunc varius justo eu lectus hendrerit, id commodo neque  fringilla.</textarea>
+            </div>
+            <hr>
+
+                <div class="container-baixo">
+                    <button class="botao-lixeira">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                        <button class="botao-baixo">Voltar</button>
+                        <button class="botao-baixo" id="botao-direita">Enviar</button>
+                </div>
+
+        </div>
+    </div>
+    <script src="../js/load-nav.js"></script> <!-- Carregar a navbar -->
+    <script src="../js/script.js"></script> <!-- Outros scripts -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    background-color: #F1F8F4;;
+}
+
+.container-itens {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.container-topo { /* topo*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.filtro-select {
+    display: flex;
+    align-items: center;
+    border: 1px solid #646363;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.filtro-select .material-symbols-outlined {
+    margin-right: 5px;
+    font-size: 20px;
+    color: #272626;
+}
+
+#filtro {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Meio*/
+.container-meio{
+  display: flex;
+  width: 1600px;
+}
+
+.container-meio input {
+  padding: 10px;
+  border: 1px solid #949494;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-esquerda {
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  flex: 1;
+}
+
+.input-meio {
+  border-left: none;
+  border-right: none;
+   flex: 10;
+}
+
+.input-direita {
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  flex: 1;
+}
+
+#ppp {
+    text-align: center;
+    padding: 6px;
+}
