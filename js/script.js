@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    let paginaAtual = window.location.pathname.split('/').pop().replace('.html', '').split('-')[0];
+    const pagsExcl = ['registro', 'login', 'index']
+    if (pagsExcl.includes(paginaAtual)) {
+        return
+    } else {
+        const tipoUsuario = localStorage.getItem('tipoUsuarioLogado');
+        if (tipoUsuario === 'ong' && !window.location.pathname.includes(`ong`)) {
+            window.location.href = `./${paginaAtual}-ong.html`;
+        } else if (tipoUsuario === 'coletor' && !window.location.pathname.includes(`coletor`)) {
+            window.location.href = `./${paginaAtual}-coletor.html`;
+        }
+    }
+});
 
 function logout() {
     localStorage.setItem('tipoUsuarioLogado', 'none')
@@ -95,3 +109,9 @@ function navbarCarregada() {
 }
 
 document.addEventListener('navbarLoaded', navbarCarregada);
+
+document.getElementById('mensagemexemplo').addEventListener("click", () => {
+    let tipoUsuario = localStorage.getItem('tipoUsuarioLogado')
+    window.location.href = `vismsg-${tipoUsuario}.html`
+})
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
+    <link href="../css/mensagens.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container-principal">
+        <div id="navbar-placeholder"></div> <!-- Não mexe aqui, é para carregar a navbar -->
+
+        <div class="container-itens"> <!--Engloba todos os itens-->
+
+            <div class="container-topo">
+                <h1 id="suasmensagens">Suas Mensagens</h1>
+                    <div class="filtro-select">
+                        <span class="material-symbols-outlined">filter_alt</span>
+                            <select id="filtro" >
+                                <option value="1">Mais recente</option>
+                                <option value="2">Mais antigas</option>
+                            </select>
+                    </div>
+            </div>
+
+            <div class="container-meio" id="mensagemexemplo">
+                <div class="msg-nome">Nome</div>
+                <div class="msg-assunto">Assunto da mensagem</div>
+                <div class="msg-horario">Horário</div>
+            </div>  
+            <p id="ppp">Essas são todas as suas mensagens!</p>      
+
+        </div>
+
+    </div>
+    <script src="../js/load-nav.js"></script> <!-- Carregar a navbar -->
+    <script src="../js/script.js"></script> <!-- Outros scripts -->
+</body>
+</html>
