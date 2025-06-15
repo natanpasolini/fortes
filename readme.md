@@ -29,3 +29,22 @@ Um protótipo interativo pode ser acessado no figma, através do link:
     <a href="https://github.com/Melpeixoto">
         <img alt="GitHub" title="Meu GitHub" src="https://custom-icon-badges.demolab.com/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"/></a>
 </div>
+<div align="center">
+    <h3>Henrick Gerlach</h3>
+    <a href="https://github.com/Rick1227333">
+        <img alt="GitHub" title="Meu GitHub" src="https://custom-icon-badges.demolab.com/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"/></a>
+</div>
+<div align="center">
+    <h3>Carlos Henrique Palaoro</h3>
+    <a href="https://github.com/CarlosPalaoro">
+        <img alt="GitHub" title="Meu GitHub" src="https://custom-icon-badges.demolab.com/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/carlos-henrique-palaoro-7a853b222/">
+        <img alt="LinkedIn" title="Meu LinkedIn" src="https://custom-icon-badges.demolab.com/badge/LinkedIn-1155ba?style=for-the-badge&logo=in&logoColor=white"/></a>
+</div>
+<div align="center">
+    <h3>Luana Dias Caser</h3>
+    <a href="https://github.com/luudias">
+        <img alt="GitHub" title="Meu GitHub" src="https://custom-icon-badges.demolab.com/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/luanadiascaser/">
+        <img alt="LinkedIn" title="Meu LinkedIn" src="https://custom-icon-badges.demolab.com/badge/LinkedIn-1155ba?style=for-the-badge&logo=in&logoColor=white"/></a>
+</div>
