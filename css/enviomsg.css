@@ -3,11 +3,15 @@ body {
 }
 .container-itens {
     padding: 15px;
-    width: 1600px;
-    max-width: 1800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 .container-meio {
     display: flex;
+    width: 100%;
     gap: 20px;
     padding: 15px;
 }
@@ -16,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    font-size: 20px;
 }
 
 h1 {
@@ -34,11 +37,11 @@ h1 {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    
+    flex: 1;
 }
 
 #grande {
-    height: 600px;
+    flex: 1;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
@@ -84,4 +87,30 @@ h1 {
 
 #botao-direita {
      margin-left: auto;
+}
+
+textarea {
+    resize: none;
+}
+
+.bw {
+    width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .input {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    .container-meio {
+        flex-direction: column;
+    }
+
+    .bw {
+        width: 30%;
+    }
 }
