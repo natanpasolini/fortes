@@ -95,3 +95,8 @@ function navbarCarregada() {
 }
 
 document.addEventListener('navbarLoaded', navbarCarregada);
+
+document.getElementById('mensagemexemplo').addEventListener("click", () => {
+    let tipoUsuario = localStorage.getItem('tipoUsuarioLogado')
+    window.location.href = `vismsg-${tipoUsuario}.html`
+})
