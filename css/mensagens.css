@@ -45,6 +45,8 @@ body {
   align-items: center;
   width: 100%;
   background-color: white;
+  border: 1px solid #949494;
+  border-radius: 5px;
 }
 
 .container-meio div {
@@ -85,4 +87,10 @@ body {
 .container-meio:hover input {
   background-color: var(--secondary-color);
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .msg-assunto {
+    min-width: 50%;
+  }
 }
