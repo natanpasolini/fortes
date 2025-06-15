@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Info Ponto</title>
     <link href="../styles.css" rel="stylesheet"> <!-- CSS necessário pro navbar e elementos essenciais, dê uma olhada pois já fiz botão e etc, você pode reutilizar. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/interface.css">
+    <link rel="stylesheet" href="../css/infopontos.css">
 </head>
 <body>
     <div class="container-principal">
         <div id="navbar-placeholder"></div> <!-- Não mexe aqui, é para carregar a navbar -->
        <div class="container">
-    <div class="imagem-upload">
+        <div style="display: flex;justify-content: start;width: 100%;"><h1>Informações do Ponto de Coleta</h1></div>
+        <div class="container-infos">
+           <div class="imagem-upload">
       <div class="preview">⬆</div>
     </div>
 
     <div class="info">
       <label>Nome:<br><input type="text" placeholder="Ponto de coleta exemplo"></label>
       <label>Localização:<br><input type="text" placeholder="Bairro, Cidade, UF"></label>
-      <label>Descrição:<br><textarea placeholder="Descrição"></textarea></label>
+      <label id="desc">Descrição:<br><textarea placeholder="Descrição"></textarea></label>
     </div>
+        </div>
 
     <div class="graficos">
       <div class="grafico">
@@ -40,7 +43,7 @@
     </div>
 
     <div class="botoes">
-      <button>Voltar</button>
+      <button class="botao b-round" style="width: 10%;">Voltar</button>
     </div>
 
     <div class="anuncio">
